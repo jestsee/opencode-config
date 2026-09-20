@@ -1,0 +1,17 @@
+node_modules
+package.json
+package-lock.json
+bun.lock
+.env
+.env.*
+/opencode.jsonc
+/ntfy.json
+*openchamber*
+*.backup
+*.bak
+auth.json
+mcp-auth.json
+account.json
+*.pem
+*.key
+.DS_Store
