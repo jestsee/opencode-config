@@ -2,38 +2,97 @@
 description: "Expo & React Native specialist. All native-targeted mobile work: project setup, expo-router, native UI, EAS builds, OTA updates, native modules. Browser-targeted React goes to web agent."
 mode: all
 variant: high
-permission:
-  expo*: allow
-  agent-device*: allow
-  skill:
-    "implement": allow
-    "tdd": allow
-    "code-review": allow
-    "diagnosing-bugs": allow
-    "eas-app-stores": allow
-    "eas-hosting": allow
-    "eas-observe": allow
-    "eas-simulator": allow
-    "eas-update-insights": allow
-    "eas-workflows": allow
-    "expo-app-clip": allow
-    "expo-brownfield": allow
-    "expo-data-fetching": allow
-    "expo-dev-client": allow
-    "expo-dom": allow
-    "expo-examples": allow
-    "expo-migrate-module": allow
-    "expo-module": allow
-    "expo-native-ui": allow
-    "expo-project-structure": allow
-    "expo-router": allow
-    "expo-tailwind-setup": allow
-    "expo-ui": allow
-    "expo-upgrade": allow
-    "expo-web-to-native": allow
-    "react-native-best-practices": allow
-    "troubleshoot": allow
-    "widget-custom-fonts": allow
+permissions:
+  - action: expo*
+    resource: "*"
+    effect: allow
+  - action: agent_device*
+    resource: "*"
+    effect: allow
+  - action: skill
+    resource: implement
+    effect: allow
+  - action: skill
+    resource: tdd
+    effect: allow
+  - action: skill
+    resource: code-review
+    effect: allow
+  - action: skill
+    resource: diagnosing-bugs
+    effect: allow
+  - action: skill
+    resource: eas-app-stores
+    effect: allow
+  - action: skill
+    resource: eas-hosting
+    effect: allow
+  - action: skill
+    resource: eas-observe
+    effect: allow
+  - action: skill
+    resource: eas-simulator
+    effect: allow
+  - action: skill
+    resource: eas-update-insights
+    effect: allow
+  - action: skill
+    resource: eas-workflows
+    effect: allow
+  - action: skill
+    resource: expo-app-clip
+    effect: allow
+  - action: skill
+    resource: expo-brownfield
+    effect: allow
+  - action: skill
+    resource: expo-data-fetching
+    effect: allow
+  - action: skill
+    resource: expo-dev-client
+    effect: allow
+  - action: skill
+    resource: expo-dom
+    effect: allow
+  - action: skill
+    resource: expo-examples
+    effect: allow
+  - action: skill
+    resource: expo-migrate-module
+    effect: allow
+  - action: skill
+    resource: expo-module
+    effect: allow
+  - action: skill
+    resource: expo-native-ui
+    effect: allow
+  - action: skill
+    resource: expo-project-structure
+    effect: allow
+  - action: skill
+    resource: expo-router
+    effect: allow
+  - action: skill
+    resource: expo-tailwind-setup
+    effect: allow
+  - action: skill
+    resource: expo-ui
+    effect: allow
+  - action: skill
+    resource: expo-upgrade
+    effect: allow
+  - action: skill
+    resource: expo-web-to-native
+    effect: allow
+  - action: skill
+    resource: react-native-best-practices
+    effect: allow
+  - action: skill
+    resource: troubleshoot
+    effect: allow
+  - action: skill
+    resource: widget-custom-fonts
+    effect: allow
 ---
 
 # Expo Docs: MCP is the only source (mandatory)

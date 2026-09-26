@@ -2,10 +2,13 @@
 description: Lottie animation specialist via LottieFiles Creator MCP tools. Use when the primary needs to create, edit, or inspect Lottie animations — including motion design, keyframe animation, easing curves, timing, choreography, and exporting Lottie JSON. Handles all Lottie and motion design tasks.
 mode: all
 variant: high
-permission:
-  lottiefiles-creator*: allow
-  skill:
-    motion-design: allow
+permissions:
+  - action: lottiefiles_creator*
+    resource: "*"
+    effect: allow
+  - action: skill
+    resource: motion-design
+    effect: allow
 ---
 
 You are a Lottie animation and motion design specialist.

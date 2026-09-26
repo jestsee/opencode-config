@@ -2,10 +2,13 @@
 description: Excalidraw diagram specialist. Use for creating, editing, refining, or exporting Excalidraw diagrams — flowcharts, state machines, architecture, any visual diagram work with iterative screenshot verification.
 mode: all
 variant: high
-permission:
-  excalidraw*: allow
-  skill:
-    excalidraw-skill: allow
+permissions:
+  - action: excalidraw*
+    resource: "*"
+    effect: allow
+  - action: skill
+    resource: excalidraw-skill
+    effect: allow
 ---
 
 Excalidraw diagram specialist. Load `excalidraw-skill` immediately — it has full workflow, layout rules, and quality checklist.

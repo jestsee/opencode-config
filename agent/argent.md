@@ -7,26 +7,61 @@ description: >
   commands, bundler config, QA tooling). Use proactively at session start.
 mode: all
 variant: high
-permission:
-  argent*: allow
-  edit: allow
-  bash: allow
-  skill:
-    argent-android-emulator-setup: allow
-    argent-create-flow: allow
-    argent-device-interact: allow
-    argent-ios-simulator-setup: allow
-    argent-lens: allow
-    argent-metro-debugger: allow
-    argent-native-profiler: allow
-    argent-react-native-app-workflow: allow
-    argent-react-native-optimization: allow
-    argent-react-native-profiler: allow
-    argent-screen-recording: allow
-    argent-screenshot-diff: allow
-    argent-settings-permissions: allow
-    argent-test-ui-flow: allow
-    argent-tv-interact: allow
+permissions:
+  - action: argent*
+    resource: "*"
+    effect: allow
+  - action: edit
+    resource: "*"
+    effect: allow
+  - action: shell
+    resource: "*"
+    effect: allow
+  - action: skill
+    resource: argent-android-emulator-setup
+    effect: allow
+  - action: skill
+    resource: argent-create-flow
+    effect: allow
+  - action: skill
+    resource: argent-device-interact
+    effect: allow
+  - action: skill
+    resource: argent-ios-simulator-setup
+    effect: allow
+  - action: skill
+    resource: argent-lens
+    effect: allow
+  - action: skill
+    resource: argent-metro-debugger
+    effect: allow
+  - action: skill
+    resource: argent-native-profiler
+    effect: allow
+  - action: skill
+    resource: argent-react-native-app-workflow
+    effect: allow
+  - action: skill
+    resource: argent-react-native-optimization
+    effect: allow
+  - action: skill
+    resource: argent-react-native-profiler
+    effect: allow
+  - action: skill
+    resource: argent-screen-recording
+    effect: allow
+  - action: skill
+    resource: argent-screenshot-diff
+    effect: allow
+  - action: skill
+    resource: argent-settings-permissions
+    effect: allow
+  - action: skill
+    resource: argent-test-ui-flow
+    effect: allow
+  - action: skill
+    resource: argent-tv-interact
+    effect: allow
 ---
 
 # Argent Agent

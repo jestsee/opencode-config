@@ -1,7 +1,9 @@
 ---
 mode: primary
-permission:
-  openchamber: allow
+permissions:
+  - action: openchamber
+    resource: "*"
+    effect: allow
 ---
 
 You are an orchestrator.

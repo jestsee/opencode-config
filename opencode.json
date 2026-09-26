@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "agent": {
+  "agents": {
     "cloudflare": {
       "model": "{file:./models/small-model.txt}"
     },
@@ -24,154 +24,170 @@
     },
     "test": {
       "model": "{file:./models/small-model.txt}"
+    },
+    "title": {
+      "model": "{file:./models/small-model.txt}"
     }
   },
   "mcp": {
-    "agent-device": {
-      "command": [
-        "agent-device",
-        "mcp"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "agentation": {
-      "command": [
-        "npx",
-        "-y",
-        "agentation-mcp",
-        "server",
-        "--port",
-        "4747"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "appfigures": {
-      "command": [
-        "npx",
-        "-y",
-        "@appfigures/cli",
-        "mcp"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "argent": {
-      "command": [
-        "argent",
-        "mcp"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "better-icons": {
-      "command": [
-        "npx",
-        "-y",
-        "better-icons"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "brilliant": {
-      "enabled": false,
-      "type": "remote",
-      "url": "http://127.0.0.1:3333/mcp"
-    },
-    "cloudflare": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-bindings": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://bindings.mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-builds": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://builds.mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-docs": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://docs.mcp.cloudflare.com/mcp"
-    },
-    "cloudflare-observability": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://observability.mcp.cloudflare.com/mcp"
-    },
-    "exa": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://mcp.exa.ai/mcp"
-    },
-    "excalidraw": {
-      "command": [
-        "npx",
-        "-y",
-        "mcp-excalidraw-server"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "expo": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://mcp.expo.dev/mcp"
-    },
-    "figma": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://mcp.figma.com/mcp"
-    },
-    "gh_grep": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://mcp.grep.app"
-    },
-    "lottiefiles-creator": {
-      "command": [
-        "npx",
-        "-y",
-        "@lottiefiles/creator-mcp@latest"
-      ],
-      "enabled": false,
-      "type": "local"
-    },
-    "maestro": {
-      "command": [
-        "{env:HOME}/.maestro/bin/maestro",
-        "mcp"
-      ],
-      "enabled": false,
-      "environment": {
-        "MAESTRO_CLI_ANALYSIS_NOTIFICATION_DISABLED": "true"
+    "servers": {
+      "agent-device": {
+        "command": [
+          "agent-device",
+          "mcp"
+        ],
+        "disabled": true,
+        "type": "local"
       },
-      "type": "local"
-    },
-    "mobbin": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://api.mobbin.com/mcp"
-    },
-    "notion": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://mcp.notion.com/mcp"
-    },
-    "paper": {
-      "enabled": false,
-      "type": "remote",
-      "url": "http://127.0.0.1:29979/mcp"
-    },
-    "quackback": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://quackback.jestsee.com/api/mcp"
+      "agentation": {
+        "command": [
+          "npx",
+          "-y",
+          "agentation-mcp",
+          "server",
+          "--port",
+          "4747"
+        ],
+        "disabled": true,
+        "type": "local"
+      },
+      "appfigures": {
+        "command": [
+          "npx",
+          "-y",
+          "@appfigures/cli",
+          "mcp"
+        ],
+        "disabled": true,
+        "type": "local"
+      },
+      "argent": {
+        "command": [
+          "argent",
+          "mcp"
+        ],
+        "disabled": true,
+        "type": "local"
+      },
+      "better-icons": {
+        "command": [
+          "npx",
+          "-y",
+          "better-icons"
+        ],
+        "disabled": true,
+        "type": "local"
+      },
+      "brilliant": {
+        "disabled": true,
+        "type": "remote",
+        "url": "http://127.0.0.1:3333/mcp"
+      },
+      "cloudflare": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.cloudflare.com/mcp"
+      },
+      "cloudflare-bindings": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://bindings.mcp.cloudflare.com/mcp"
+      },
+      "cloudflare-builds": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://builds.mcp.cloudflare.com/mcp"
+      },
+      "cloudflare-docs": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://docs.mcp.cloudflare.com/mcp"
+      },
+      "cloudflare-observability": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://observability.mcp.cloudflare.com/mcp"
+      },
+      "exa": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.exa.ai/mcp"
+      },
+      "excalidraw": {
+        "command": [
+          "npx",
+          "-y",
+          "mcp-excalidraw-server"
+        ],
+        "disabled": true,
+        "type": "local"
+      },
+      "expo": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.expo.dev/mcp"
+      },
+      "figma": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.figma.com/mcp"
+      },
+      "gh_grep": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.grep.app"
+      },
+      "lottiefiles-creator": {
+        "command": [
+          "npx",
+          "-y",
+          "@lottiefiles/creator-mcp@latest"
+        ],
+        "disabled": true,
+        "type": "local"
+      },
+      "maestro": {
+        "command": [
+          "{env:HOME}/.maestro/bin/maestro",
+          "mcp"
+        ],
+        "disabled": true,
+        "environment": {
+          "MAESTRO_CLI_ANALYSIS_NOTIFICATION_DISABLED": "true"
+        },
+        "type": "local"
+      },
+      "mobbin": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://api.mobbin.com/mcp"
+      },
+      "notion": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://mcp.notion.com/mcp"
+      },
+      "paper": {
+        "disabled": true,
+        "type": "remote",
+        "url": "http://127.0.0.1:29979/mcp"
+      },
+      "quackback": {
+        "disabled": false,
+        "type": "remote",
+        "url": "https://quackback.jestsee.com/api/mcp"
+      },
+      "pencil": {
+        "command": [
+          "/Users/jesica/.pencil/mcp/visual_studio_code/out/mcp-server-darwin-arm64",
+          "--app",
+          "visual_studio_code",
+          "--agent",
+          "openCodeCLI"
+        ],
+        "disabled": false,
+        "type": "local"
+      }
     },
     "pencil": {
       "command": [
@@ -186,35 +202,122 @@
     }
   },
   "model": "alibaba-token-plan/qwen3.8-max",
-  "permission": {
-    "agent-device*": "deny",
-    "agentation*": "deny",
-    "appfigures*": "deny",
-    "argent*": "deny",
-    "better-icons*": "deny",
-    "cloudflare*": "deny",
-    "context7*": "deny",
-    "expo*": "deny",
-    "figma*": "deny",
-    "gh_grep*": "deny",
-    "github*": "deny",
-    "lottiefiles-creator*": "deny",
-    "maestro*": "deny",
-    "notion*": "deny",
-    "openchamber": "deny",
-    "pencil_*": "deny",
-    "skill": {
-      "*": "deny",
-      "caveman": "allow",
-      "defuddle": "allow",
-      "find-skills": "allow",
-      "ponytail": "allow",
-      "ponytail-*": "allow"
+  "permissions": [
+    {
+      "action": "agent_device*",
+      "effect": "deny",
+      "resource": "*"
     },
-    "zeabur*": "deny"
-  },
-  "plugin": [
-    "@dietrichgebert/ponytail@4.9.0"
+    {
+      "action": "agentation*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "appfigures*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "argent*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "better_icons*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "cloudflare*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "context7*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "expo*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "figma*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "gh_grep*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "github*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "lottiefiles_creator*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "maestro*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "notion*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "openchamber",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "pencil_*",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "skill",
+      "effect": "deny",
+      "resource": "*"
+    },
+    {
+      "action": "skill",
+      "effect": "allow",
+      "resource": "caveman"
+    },
+    {
+      "action": "skill",
+      "effect": "allow",
+      "resource": "defuddle"
+    },
+    {
+      "action": "skill",
+      "effect": "allow",
+      "resource": "find-skills"
+    },
+    {
+      "action": "skill",
+      "effect": "allow",
+      "resource": "ponytail"
+    },
+    {
+      "action": "skill",
+      "effect": "allow",
+      "resource": "ponytail-*"
+    },
+    {
+      "action": "zeabur*",
+      "effect": "deny",
+      "resource": "*"
+    }
   ],
-  "small_model": "{file:./models/small-model.txt}"
+  "plugins": []
 }
